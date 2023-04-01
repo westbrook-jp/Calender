@@ -1,0 +1,21 @@
+﻿<Window x:Class="Westbrook.Calender.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Calender="clr-namespace:Westbrook.Calender"
+        Title="Calender" ResizeMode="NoResize" WindowStyle="None" ShowInTaskbar="False"
+        Height="160" Width="180" Background="White" ToolTip="Calender">
+	<Window.ContextMenu>
+		<ContextMenu>
+			<MenuItem Header="_Today" Command="{x:Static Calender:MainWindow.Command_Today}"/>
+			<Separator />
+			<MenuItem Header="_Setting..." Command="{x:Static Calender:MainWindow.Command_Setting}"/>
+			<MenuItem Header="_About Calender" Command="{x:Static Calender:MainWindow.Command_About}"/>
+			<Separator />
+			<MenuItem Header="E_xit" Command="{x:Static Calender:MainWindow.Command_Shutdown}"/>
+		</ContextMenu>
+	</Window.ContextMenu>
+	<Viewbox Name="MainPanel" Stretch="Fill">
+		<Calendar Name="Calender" SelectionMode="None" BorderThickness="0" BorderBrush="White">
+		</Calendar>
+	</Viewbox>
+</Window>

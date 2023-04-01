@@ -1,0 +1,33 @@
+﻿<Window x:Class="Westbrook.Calender.Dialog.ApplicationAboutDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About Events" Icon="/Resources/Application.ico"
+				ShowInTaskbar="True" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="10" />
+			<ColumnDefinition />
+			<ColumnDefinition Width="10" />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="10" />
+			<RowDefinition Height="25" />
+			<RowDefinition Height="5" />
+			<RowDefinition Height="25" />
+			<RowDefinition Height="5" />
+			<RowDefinition Height="25" />
+			<RowDefinition Height="5" />
+			<RowDefinition Height="25" />
+			<RowDefinition Height="10" />
+		</Grid.RowDefinitions>
+		<StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
+			<Label>Calender</Label>
+			<Label Name="labelVersion">Version x.x build x</Label>
+		</StackPanel>
+		<TextBlock Grid.Column="1" Grid.Row="3">Copyright (C) 2013 <Hyperlink Name="linkToHomePage" Click="linkToHomePage_Click">Westbrook</Hyperlink>. All rights reserved.</TextBlock>
+		<TextBlock Grid.Column="1" Grid.Row="5"><Hyperlink Name="linkSoftwarePage" Click="linkSoftwarePage_Click">http://www.westbrook.jp/Software/</Hyperlink></TextBlock>
+		<!--Action Controls-->
+		<Button Name="buttonClose" Content="Close" Grid.Column="1" Grid.Row="7" Height="23" Width="75" IsCancel="True" />
+	</Grid>
+
+</Window>

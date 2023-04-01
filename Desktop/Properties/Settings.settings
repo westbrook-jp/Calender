@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Westbrook.Calender.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Calender_RefleshSpan" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="MainWindow_Left" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1000000000</Value>
+    </Setting>
+    <Setting Name="MainWindow_Top" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1000000000</Value>
+    </Setting>
+    <Setting Name="Calender_FirstDayOfWeek" Type="System.DayOfWeek" Scope="User">
+      <Value Profile="(Default)">Sunday</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
